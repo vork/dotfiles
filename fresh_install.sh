@@ -3,15 +3,16 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 brew update
-brew install android-sdk bash caskroom/cask/brew-cask carthage curl ettercap go homebrew/dupes/grep mariadb openssh node nmap openssl python tmux vim wget gnupg2 zsh
-brew cask install adium alfred android-studio appcleaner atext atom beamer brackets cocoapacketanalyzer dropbox firefox iterm2 java libreoffice limechat macdown sequel-pro slack smoothmouse spotify teamviewer textmate thunderbird transmission virtualbox vlc controlplane
+brew install android-sdk caskroom/cask/brew-cask curl go homebrew/dupes/grep openssh node openssl python vim wget zsh gcc
+brew cask install alfred android-studio appcleaner amethyst dropbox google-chrome vivaldi flux iconjar little-snitch monodraw texpad papers manuscripts screenflow sketch-toolbox adobe-creative-cloud adobe-photoshop-cc adobe-illustrator-cc principle zeplin sublime-text teamspeak-client genymotion iterm2 java slack karabiner vlc 1password numi bartender staruml wireshark private-internet-access boom blockblock knockknock gpgtools helium kicad netspot owncloud xquartz rstudio
+brew tap homebrew/science
+brew install r
 cd ~/Documents
-git clone https://github.com/moogle19/dotfiles.git
+git clone https://github.com/vork/dotfiles.git
 cd dotfiles
 git submodule init && git submodule update
 go get -u github.com/nsf/gocode
 sh install_hermit.sh
-
 
 ln -s ${PWD}/.oh-my-zsh ~/.oh-my-zsh
 ln -s ${PWD}/.vim ~/.vim
